@@ -1,0 +1,15 @@
+### How to start
+```bash
+npm start
+```
+
+### 获取juejin数据-接口--get请求
+```bash
+http://localhost:3000/api/juejin/
+```
+
+### pm2
+```bash
+pm2 start start.js --name scrapy
+pm2 start start.js --watch // 当文件变化时自动重启应用
+```
