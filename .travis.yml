@@ -14,5 +14,5 @@ before_install:
 - chmod 600 ./deploy_key
 - echo -e "Host $SERVER_IP_ADDRESS\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 after_success:
-- ssh -i ./deploy_key ubuntu@123.207.16.175 'cd /home/ubuntu/koa2_scrapy_news && git
+- ssh -i ./deploy_key ubuntu@123.207.16.175 'cd /home/ubuntu/koa_scrapy_news && git
   pull origin master && npm i && pm2 restart scrapy'
