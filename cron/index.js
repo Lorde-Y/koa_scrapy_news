@@ -30,7 +30,7 @@ export const GitHubJob = () => {
 }
 
 export const SendEmailer = () => {
-  const task = new cronJob('0 10 18 * * *', function() {
+  const task = new cronJob('0 10 19 * * *', function() {
     const d = new Date();
     console.log('Every one week 20:00:00:', d);
     Emailer.run();
